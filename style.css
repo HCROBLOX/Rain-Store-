@@ -1,0 +1,84 @@
+/* style.css */
+:root {
+    --bg-color: #121214;
+    --card-bg: #1a1a1e;
+    --primary: #00e676;
+    --text-color: #ffffff;
+    --border-color: #2a2a30;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    margin: 0;
+    padding: 20px;
+}
+
+/* Style cho Trang Admin */
+.admin-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid var(--border-color);
+    padding-bottom: 20px;
+}
+
+.btn-back {
+    background-color: #333;
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+
+/* Bảng dữ liệu */
+.table-responsive {
+    overflow-x: auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: var(--card-bg);
+    margin-top: 20px;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+th, td {
+    padding: 15px;
+    text-align: left;
+    border-bottom: 1px solid var(--border-color);
+}
+
+th {
+    background-color: #252529;
+    color: var(--primary);
+}
+
+code {
+    background-color: #333;
+    padding: 2px 6px;
+    border-radius: 4px;
+    color: #ff8a80;
+}
+
+/* Trạng thái */
+.status-đang.chờ { color: #ffb300; }
+.status-đang.cày { color: #29b6f6; }
+.status-hoàn.thành { color: #66bb6a; }
+
+.status-select {
+    background: #252529;
+    color: white;
+    border: 1px solid var(--border-color);
+    padding: 6px;
+    border-radius: 4px;
+    cursor: pointer;
+}
