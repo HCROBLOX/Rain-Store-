@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hệ Thống Admin - RainStore</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="admin-container">
+        <header>
+            <h1>RainStore - Quản Lý Đơn Cày Thuê</h1>
+            <a href="index.html" class="btn-back">Về Trang Chủ</a>
+        </header>
+
+        <main>
+            <h2>Danh sách đơn hàng cần xử lý</h2>
+            <div class="table-responsive">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Khách Hàng</th>
+                            <th>Dịch Vụ</th>
+                            <th>Tài Khoản / Mật Khẩu</th>
+                            <th>Ghi Chú</th>
+                            <th>Trạng Thái</th>
+                            <th>Hành Động</th>
+                        </tr>
+                    </thead>
+                    <tbody id="adminOrderTable">
+                        </tbody>
+                </table>
+            </div>
+        </main>
+    </div>
+
+    <script type="module" src="admin.js"></script>
+</body>
+</html>
